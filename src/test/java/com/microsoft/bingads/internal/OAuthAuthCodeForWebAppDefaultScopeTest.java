@@ -11,7 +11,6 @@ import com.microsoft.bingads.ApiEnvironment;
 import com.microsoft.bingads.OAuthWebAuthCodeGrant;
 
 public class OAuthAuthCodeForWebAppDefaultScopeTest {
-
     @Test
     public void GetAuthorizationUrl_EncodesScopeSeparator() throws Exception {
         OAuthAuthorization auth = new OAuthWebAuthCodeGrant("test_id", "test_secret", new URL("https://test.com/login"), ApiEnvironment.PRODUCTION);
